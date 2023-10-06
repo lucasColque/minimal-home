@@ -5,6 +5,7 @@ import Catalogo from '../pages/Catalogo/Catalogo';
 import Contacto from '../pages/Contacto/Contacto';
 import Admin from '../pages/Admin/Admin';
 import DetalleItem from '../components/DetalleItem/DetalleItem';
+import Nosotros from '../pages/Nosotros';
 
 
 

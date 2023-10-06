@@ -4,7 +4,7 @@ import './Nosotros.css';
 const Nosotros = (props) => {
   return (
     <div className="contenedor-nosotros"> 
-      <img
+      {/* <img
         className="imagen-nosotros"  
         src={require(`../../pages/Contacto/image/usuarioo-${props.imagen}.png`)} 
         alt="Foto de Nosotros" 
@@ -19,7 +19,7 @@ const Nosotros = (props) => {
           </p>
         )}
         <p className="texto-nosotros">"{props.Contacto}"</p> 
-      </div>
+      </div> */}
     </div>
   );
 };
