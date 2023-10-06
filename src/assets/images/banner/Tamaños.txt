@@ -1,0 +1,3 @@
+Banner: 
+Height -> 1366 px
+Width -> 700px

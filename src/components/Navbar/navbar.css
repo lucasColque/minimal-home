@@ -1,0 +1,202 @@
+
+:root {
+    /* Palette */
+
+    --primary-solid: #575c58;
+    --primary-900: rgb(87, 92, 88, 0.9);
+    --primary-500: rgb(87, 92, 88, 0.5);
+    --primary-300: rgb(87, 92, 88, 0.3);
+
+    --secondary-solid: #2e3532;
+    --primary-900: rgb(46, 53, 50,0.9);
+    --primary-500: rgb(46, 53, 50,0.5);
+    --primary-300: rgb(46, 53, 50,0.3);
+
+    --dark-solid: #1f1f1f;
+    --dark-900: rgb(31, 31, 31, 0.9);
+    --dark-500: rgb(31, 31, 31, 0.5);
+    --dark-300: rgb(31, 31, 31, 0.3);
+
+    --dark-bg-solid: #30343f;
+    --light-bg-solid: #fafaff;
+    --light-font-solid: #fff;
+
+    /*Typography*/
+    --base-font: "Inter", sans-serif;
+    --alternative-font: "Raleway", sans-serif;
+
+    /*Font-sizes--->Utiliza em*/
+
+    --font-display: 4.6em;
+    --font-jumbo: 3.8em;
+    --font-xlarge: 3em;
+    --font-large: 2.4em;
+    --font-medium: 1.8em;
+    --font-small: 1.6em;
+    --font-xsmall: 1.4em;
+
+    /*Spacing--->Utiliza rem*/
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-20: 2rem;
+    --spacing-24: 2.4rem;
+    --spacing-28: 2.8rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
+    --spacing-4: 0.4rem;
+}
+
+.active{
+    background-color: var(--primary-solid);
+}
+.navbar__ul > li{
+    list-style: none;
+}
+.navbar__header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+}
+.navbar__header{
+    background-color: var(--secondary-solid);
+}
+.logo{
+    height: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    height: 90px;
+    object-fit: contain;
+    margin-left: 5px;
+
+}
+.navbar__ul{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 0;
+}
+.navbar__container-ul-form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar__ul li a{
+    display: block;
+    text-decoration: none;
+    color: var(--light-font-solid);
+    padding: var(--spacing-8);
+    margin:0 var(--spacing-12);
+    transition: background-color .3s ease-in-out;
+    font-size: var(--font-medium);
+}
+.navbar__ul li a:hover{
+    background-color: var(--primary-solid);
+}
+.navbar__menu{
+    display: none;
+    position: absolute;
+    top: 2.7rem;
+    right: 1.8rem;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 48px;
+    height: 43px;
+    cursor: pointer;
+}
+.navbar-menu__span{
+    height: 7px;
+    width: 100%;
+    background-color: var(--light-font-solid);
+    border-radius: 0.2rem;
+    transition: background-color .3s ease-in-out;
+}
+.navbar__menu:hover > .navbar-menu__span{
+    background-color: #d9d9d9;
+}
+.navbar__form{
+    font-size: var(--font-xsmall);
+    display: flex;
+    align-items: center;
+    width: 30%;
+    gap: 10px;
+}
+.navbar-form__button{
+    text-decoration: none;
+    color: var(--light-font-solid);
+    padding: var(--spacing-4);
+    display: inline-block;
+    background-color: var(--dark-solid);
+    transition: background-color .3s ease-in-out;
+    font-size: var(--font-medium);
+    border-radius: 10px;
+}
+.navbar-form__button:hover{
+    
+    background-color: var(--dark-bg-solid);
+}
+.navbar__input{
+    height: 40px;
+    border-radius: 10px;
+    font-size: var(--font-small);
+    padding-left: 10px;
+    width: 100%;
+}
+/**Media Queries*/
+@media (max-width: 800px){
+    .navbar__contacto{
+        display: block;
+    }
+    .navbar__menu{
+        display: flex;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: start;
+    }
+    .navbar__ul{
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 0.25rem;
+    }
+    .navbar__ul li{
+        width: 70%;
+        margin: 0.2rem 0.5rem;
+    }
+    .navbar__form{
+        width: 100%;
+        margin-left:var(--spacing-24);
+    }
+    .navbar__input{
+        width: 50%;
+    }
+    .navbar__container-ul-form.open{
+        display: flex;
+    }
+    .navbar__container-ul-form{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+    
+}
+
+
+
+
