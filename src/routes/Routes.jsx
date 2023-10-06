@@ -4,7 +4,6 @@ import Home from '../pages/Home';
 import Catalogo from '../pages/Catalogo/Catalogo';
 import Contacto from '../pages/Contacto/Contacto';
 import Admin from '../pages/Admin/Admin';
-import NotFound from '../components/NotFound/NotFound';
 import DetalleItem from '../components/DetalleItem/DetalleItem';
 
 
